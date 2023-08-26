@@ -55,7 +55,7 @@ const drop = (e: DragEvent) => {
 
 <template>
   <div
-    class="flex items-center justify-center border-[2px] border-dashed border-gray-700"
+    class="relative border-[2px] border-dashed border-gray-700"
     @dragover="dragover"
     @dragleave="dragleave"
     @drop="drop"
@@ -71,7 +71,7 @@ const drop = (e: DragEvent) => {
 
     <label
       :for="uid"
-      class="cursor-pointer"
+      class="absolute inset-0 flex cursor-pointer items-center justify-center"
     >
       <div class="text-4xl text-white/20">Upload</div>
       <!-- <div v-if="isDragging">Release to drop files here.</div>
